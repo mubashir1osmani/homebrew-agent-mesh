@@ -4,7 +4,6 @@ class AgentMesh < Formula
   url "https://github.com/mubashir1osmani/agent-mesh/releases/download/v0.0.1/agent-mesh-0.0.1-macos-universal.tar.gz"
   sha256 "327d5ca5e3b57339ad19df79081ab1f197a5b7237e78b06b221eed6df409e3c0"
   license "MIT"
-  version "0.0.1"
 
   def install
     bin.install "agent-mesh"

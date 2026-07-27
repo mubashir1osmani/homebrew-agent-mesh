@@ -13,17 +13,17 @@ class AgentMesh < Formula
     <<~CAVEATS
       Point an agent at the server to start using it:
 
-        claude mcp add --scope user agent-mesh -- #{opt_bin}/agent-mesh
+        claude mcp add --scope user agent-mesh -- agent-mesh
 
       For opencode, add to ~/.config/opencode/opencode.json:
 
         { "mcp": { "agent-mesh": { "type": "local",
-          "command": ["#{opt_bin}/agent-mesh"], "enabled": true } } }
+          "command": ["agent-mesh"], "enabled": true } } }
 
       For codex, add to ~/.codex/config.toml:
 
         [mcp_servers.agent-mesh]
-        command = "#{opt_bin}/agent-mesh"
+        command = "agent-mesh"
 
       agent-mesh drives agents non-interactively, which means their permission
       prompts are auto-approved. Point it at code you are willing to let agents

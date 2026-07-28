@@ -1,8 +1,8 @@
 class AgentMesh < Formula
   desc "MCP control plane that lets coding agents talk to each other's sessions"
   homepage "https://github.com/mubashir1osmani/agent-mesh"
-  url "https://github.com/mubashir1osmani/agent-mesh/releases/download/v0.0.1/agent-mesh-0.0.1-macos-universal.tar.gz"
-  sha256 "327d5ca5e3b57339ad19df79081ab1f197a5b7237e78b06b221eed6df409e3c0"
+  url "https://github.com/mubashir1osmani/agent-mesh/releases/download/v0.0.2/agent-mesh-0.0.2-macos-universal.tar.gz"
+  sha256 "bab0739d0919543be3e5dd65b50f34ccac80949519f9dbf12073ec41cb96fa9e"
   license "MIT"
 
   def install

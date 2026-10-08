@@ -1,8 +1,8 @@
 class AgentMesh < Formula
   desc "MCP control plane that lets coding agents talk to each other's sessions"
   homepage "https://github.com/mubashir1osmani/agent-mesh"
-  url "https://github.com/mubashir1osmani/agent-mesh/releases/download/v0.0.2/agent-mesh-0.0.2-macos-universal.tar.gz"
-  sha256 "bab0739d0919543be3e5dd65b50f34ccac80949519f9dbf12073ec41cb96fa9e"
+  url "https://github.com/mubashir1osmani/agent-mesh/releases/download/v0.0.3/agent-mesh-0.0.3-macos-universal.tar.gz"
+  sha256 "0ad165473ec4e46cf1022072eba8f4d24aefd06b8ad56c952ee1ec85a95ba0d3"
   license "MIT"
 
   def install
@@ -24,6 +24,10 @@ class AgentMesh < Formula
 
         [mcp_servers.agent-mesh]
         command = "agent-mesh"
+
+      Live sessions can message each other through a shared hub. To have
+      Claude Code pick up messages outside tmux, add the agent-mesh hooks
+      from the README to ~/.claude/settings.json. spawn_node needs tmux.
 
       agent-mesh drives agents non-interactively, which means their permission
       prompts are auto-approved. Point it at code you are willing to let agents
